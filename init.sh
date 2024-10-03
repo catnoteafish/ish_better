@@ -14,7 +14,7 @@ echo "感谢使用此优化版本!"
 echo "作者: Kasytano (https://github.com/catnoteafish/catnoteafish)"
 echo "建议全程使用魔法加速!"
 echo "警告! 此脚本会修改你的系统配置, 请确保你知道你在做什么!"
-while [true];
+while true
 do
     echo "是否继续?(y/n)\n>>"
     read choice
@@ -33,7 +33,7 @@ echo "正在覆写配置文件..."
 echo "" > etc/profile
 
 # 换源
-while [true];
+while true
 do
     echo "换源? （默认使用: 清华源）(y/n)\n>>"
     read choice
@@ -66,7 +66,7 @@ echo "正在更新软件包..."
 apk update
 
 echo "安装常用工具?(y/n)\n>>"
-while [true];
+while true
 do
     read choice
     if [ $choice = 'y' ] || [ $choice = 'Y' ] || [ $choice = 'yes' ] || [ $choice = 'Yes' ];
@@ -82,7 +82,7 @@ do
 done
 
 echo "安装开发工具?(y/n)\n>>"
-while [true];
+while true
 do
     read choice
     if [ $choice = 'y' ] || [ $choice = 'Y' ] || [ $choice = 'yes' ] || [ $choice = 'Yes' ];
@@ -98,7 +98,7 @@ do
 done
 
 echo "安装oh-my-zsh?(推荐)(y/n)\n>>"
-while [true];
+while true
 do
     read choice
     if [ $choice = 'y' ] || [ $choice = 'Y' ] || [ $choice = 'yes' ] || [ $choice = 'Yes' ];
@@ -120,7 +120,7 @@ do
 done
 
 echo "安装neovim?(y/n)\n>>"
-while [true];
+while true
 do
     read choice
     if [ $choice = 'y' ] || [ $choice = 'Y' ] || [ $choice = 'yes' ] || [ $choice = 'Yes' ];
@@ -136,7 +136,7 @@ do
 done
 
 echo "配置ssh?(推荐)(y/n)\n>>"
-while [true];
+while true
 do
     read choice
     if [ $choice = 'y' ] || [ $choice = 'Y' ] || [ $choice = 'yes' ] || [ $choice = 'Yes' ];
@@ -159,7 +159,7 @@ do
 done
 
 echo "启用后台保活?(y/n)\n>>"
-while [true];
+while true
 do
     read choice
     if [ $choice = 'y' ] || [ $choice = 'Y' ] || [ $choice = 'yes' ] || [ $choice = 'Yes' ];
@@ -176,7 +176,7 @@ do
 done
 
 echo "挂载目录?(y/n)"
-while [true];
+while true
 do
     read choice
     if [ $choice = 'y' ] || [ $choice = 'Y' ] || [ $choice = 'yes' ] || [ $choice = 'Yes' ];
